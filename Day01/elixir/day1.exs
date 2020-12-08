@@ -54,8 +54,4 @@ numbers = String.split(input)
 vals = for n <- numbers, do: elem(Integer.parse(n), 0)
 
 IO.puts("Part 1: #{Day1.part1(vals, 2020)}")
-
-#IO.puts(["[", Enum.join(Day1.first_sum([4,3,2,1]), ", "), "]"])
-#IO.puts(["[", Enum.join(Day1.first_prod([4,3,2,1]), ", "), "]"])
-
 IO.puts("Part 2: #{Day1.part2(vals, 2020)}")
